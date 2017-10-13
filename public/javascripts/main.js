@@ -5,4 +5,5 @@
       topnav.classList.toggle('scrolled')
     }
   })
+  window.setTimeout(() => document.querySelector('.hero-content').classList.add('loaded'), 500)
 })()

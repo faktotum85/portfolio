@@ -1,29 +1,46 @@
 $font-sans: 'Lato', sans-serif
 $font-serif: 'Vollkorn', serif
+$font-size-regular: 20px
 $primary-col: black
 $secondary-col: white
 $spacing: 20px
 $content-width: 960px
+$mobile-tablet: '(max-width: 1100px)'
 
-h1, h2, h3, h4, h5, h6
+h1
+  font-size: $font-size-regular * 4
   font-family: $font-serif
+  line-height: 1.1
+
+h2
+  font-size: $font-size-regular * 1.5
 
 body
   background: $primary-col
   font-family: $font-sans
+  font-size: $font-size-regular
   color: $secondary-col
   margin: 0
 
 a
   font-family: $font-serif
-  font-weight: bold
   color: $secondary-col
 
 // position on top of hero image
 .hero-content
   position: absolute
-  top: 0
+  top: 200px
+  @media #{$mobile-tablet}
+    top: 100px
   width: 100%
+  opacity: 0
+  transition: opacity 2s
+
+.hero-content.loaded
+  opacity: 1
+
+.hero-content h1
+  margin-bottom: 0
 
 .hero-img
   z-index: -1
@@ -42,23 +59,18 @@ a
   background: rgba($primary-col, 0.75)
 
 .topnav a
-  font-size: 1.2em
   text-transform: uppercase
   text-decoration: none
-  border-bottom: 2px solid $secondary-col
-  display: inline-block
-  line-height: 0.85
-  transition: all 0.1s
   margin-right: $spacing
 
 .topnav a:hover
   border-bottom: none
-  font-size: 1.3em
+  font-weight: 700
 
 .wrapper
   padding: $spacing
   max-width: $content-width
-  margin: auto
+  margin: 0 auto 0 auto
 
 .img-responsive
   width: 100%

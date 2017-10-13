@@ -1,21 +1,37 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Vollkorn", serif; }
+h1 {
+  font-size: 80px;
+  font-family: "Vollkorn", serif;
+  line-height: 1.1; }
+
+h2 {
+  font-size: 30px; }
 
 body {
   background: black;
   font-family: "Lato", sans-serif;
+  font-size: 20px;
   color: white;
   margin: 0; }
 
 a {
   font-family: "Vollkorn", serif;
-  font-weight: bold;
   color: white; }
 
 .hero-content {
   position: absolute;
-  top: 0;
-  width: 100%; }
+  top: 200px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 2s; }
+  @media (max-width: 1100px) {
+    .hero-content {
+      top: 100px; } }
+
+.hero-content.loaded {
+  opacity: 1; }
+
+.hero-content h1 {
+  margin-bottom: 0; }
 
 .hero-img {
   z-index: -1; }
@@ -34,23 +50,18 @@ a {
   background: rgba(0, 0, 0, 0.75); }
 
 .topnav a {
-  font-size: 1.2em;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 2px solid white;
-  display: inline-block;
-  line-height: 0.85;
-  transition: all 0.1s;
   margin-right: 20px; }
 
 .topnav a:hover {
   border-bottom: none;
-  font-size: 1.3em; }
+  font-weight: 700; }
 
 .wrapper {
   padding: 20px;
   max-width: 960px;
-  margin: auto; }
+  margin: 0 auto 0 auto; }
 
 .img-responsive {
   width: 100%; }
