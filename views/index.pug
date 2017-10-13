@@ -1,5 +1,26 @@
 extends layout
 
+block hero
+  div
+    picture.img-responsive.hero-img
+      source(media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" srcset=`
+      images/igor-ovsyannykov-252351_z97gxx_ar_1_2,c_fill,g_auto__c_scale,w_200.jpg 200w,
+      images/igor-ovsyannykov-252351_z97gxx_ar_1_2,c_fill,g_auto__c_scale,w_425.jpg 425w,
+      images/igor-ovsyannykov-252351_z97gxx_ar_1_2,c_fill,g_auto__c_scale,w_589.jpg 589w,
+      images/igor-ovsyannykov-252351_z97gxx_ar_1_2,c_fill,g_auto__c_scale,w_715.jpg 715w,
+      images/igor-ovsyannykov-252351_z97gxx_ar_1_2,c_fill,g_auto__c_scale,w_767.jpg 767w`)
+      img.img-responsive(sizes="(max-width: 1400px) 100vw, 1400px" srcset=`
+      images/igor-ovsyannykov-252351_z97gxx_ar_16_9,c_fill,g_auto__c_scale,w_768.jpg 768w,
+      images/igor-ovsyannykov-252351_z97gxx_ar_16_9,c_fill,g_auto__c_scale,w_968.jpg 968w,
+      images/igor-ovsyannykov-252351_z97gxx_ar_16_9,c_fill,g_auto__c_scale,w_1145.jpg 1145w,
+      images/igor-ovsyannykov-252351_z97gxx_ar_16_9,c_fill,g_auto__c_scale,w_1311.jpg 1311w,
+      images/igor-ovsyannykov-252351_z97gxx_ar_16_9,c_fill,g_auto__c_scale,w_1400.jpg 1400w`
+      src="igor-ovsyannykov-252351_z97gxx_ar_16_9,c_fill,g_auto__c_scale,w_1400.jpg"
+      alt="spare parts")    
+    .hero-content
+      .wrapper
+        h1= title
+        p Welcome to #{title}
+      
+
 block content
-  h1= title
-  p Welcome to #{title}

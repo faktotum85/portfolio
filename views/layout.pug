@@ -1,7 +1,19 @@
 doctype html
 html
   head
+    meta(name='viewport' content='width=device-width, initial-scale=1')
     title= title
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:400,700|Vollkorn:700')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    
+    block hero
+              
+    block nav
+      nav.topnav
+        a(href='#top' ) Top
+        a(href='#portfolio') Portfolio
+    
     block content
+      
+    script(src='javascripts/main.js')

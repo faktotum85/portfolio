@@ -1,0 +1,58 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Vollkorn", serif; }
+
+body {
+  background: black;
+  font-family: "Lato", sans-serif;
+  color: white;
+  margin: 0; }
+
+a {
+  font-family: "Vollkorn", serif;
+  font-weight: bold;
+  color: white; }
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.hero-img {
+  z-index: -1; }
+
+.topnav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: all 1s; }
+
+.topnav.scrolled {
+  background: rgba(0, 0, 0, 0.75); }
+
+.topnav a {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  line-height: 0.85;
+  transition: all 0.1s;
+  margin-right: 20px; }
+
+.topnav a:hover {
+  border-bottom: none;
+  font-size: 1.3em; }
+
+.wrapper {
+  padding: 20px;
+  max-width: 960px;
+  margin: auto; }
+
+.img-responsive {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,64 @@
+$font-sans: 'Lato', sans-serif
+$font-serif: 'Vollkorn', serif
+$primary-col: black
+$secondary-col: white
+$spacing: 20px
+$content-width: 960px
+
+h1, h2, h3, h4, h5, h6
+  font-family: $font-serif
+
 body
-  padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  background: $primary-col
+  font-family: $font-sans
+  color: $secondary-col
+  margin: 0
 
 a
-  color: #00B7FF
+  font-family: $font-serif
+  font-weight: bold
+  color: $secondary-col
+
+// position on top of hero image
+.hero-content
+  position: absolute
+  top: 0
+  width: 100%
+
+.hero-img
+  z-index: -1
+
+.topnav
+  padding: $spacing 0
+  display: flex
+  justify-content: flex-end
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1
+  transition: all 1s
+
+.topnav.scrolled
+  background: rgba($primary-col, 0.75)
+
+.topnav a
+  font-size: 1.2em
+  text-transform: uppercase
+  text-decoration: none
+  border-bottom: 2px solid $secondary-col
+  display: inline-block
+  line-height: 0.85
+  transition: all 0.1s
+  margin-right: $spacing
+
+.topnav a:hover
+  border-bottom: none
+  font-size: 1.3em
+
+.wrapper
+  padding: $spacing
+  max-width: $content-width
+  margin: auto
+
+.img-responsive
+  width: 100%
