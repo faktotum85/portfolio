@@ -33,7 +33,7 @@ a {
 .hero-content h1 {
   margin-bottom: 0; }
 
-.hero-img {
+.hero img {
   z-index: -1; }
 
 .topnav {
@@ -62,6 +62,10 @@ a {
   padding: 20px;
   max-width: 960px;
   margin: 0 auto 0 auto; }
+
+.section--alt {
+  background: white;
+  color: black; }
 
 .img-responsive {
   width: 100%; }

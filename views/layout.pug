@@ -1,5 +1,5 @@
 doctype html
-html(lang='de')
+html(lang='en')
   head
     meta(name='viewport' content='width=device-width, initial-scale=1')
     title= title
@@ -7,13 +7,13 @@ html(lang='de')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     
-    block hero
-              
     block nav
       nav.topnav
-        a(href='#top' ) Top
-        a(href='#portfolio') Portfolio
-    
+        a(href='#about' ) About
+        a(href='#work') My Work
+
+    block hero
+                  
     block content
       
     script(src='javascripts/main.js')
