@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build": "./node_modules/.bin/webpack"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
@@ -16,6 +17,12 @@
     "node-sass-middleware": "0.9.8",
     "pug": "~2.0.0-beta11",
     "serve-favicon": "~2.4.2",
-    "spdy": "^3.4.7"
+    "spdy": "^3.4.7",
+    "webpack": "^3.7.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0"
   }
 }
