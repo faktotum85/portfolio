@@ -7,6 +7,3 @@
   })
   window.setTimeout(() => document.querySelector('.hero-content').classList.add('loaded'), 500)
 })()
-
-import './webfont';
-import './loadWebFonts';
