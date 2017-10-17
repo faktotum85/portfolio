@@ -11,6 +11,9 @@
     "heroku-postbuild": "webpack"
   },
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "body-parser": "~1.17.1",
     "compression": "^1.7.1",
     "cookie-parser": "~1.4.3",
@@ -22,10 +25,7 @@
     "pug": "~2.0.0-beta11",
     "serve-favicon": "~2.4.2",
     "spdy": "^3.4.7",
-    "webpack": "^3.7.1",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0"
+    "webpack": "^3.7.1"
   },
   "devDependencies": {
     "concurrently": "^3.5.0"
