@@ -1,0 +1,19 @@
+// position on top of hero image
+.hero-content
+  position: absolute
+  top: 200px
+  @media #{$mobile-tablet}
+    top: 100px
+  width: 100%
+  opacity: 0
+  transition: opacity 2s
+  text-align: left
+
+.hero-content.loaded
+  opacity: 1
+
+.hero-content h1
+  margin-bottom: 0
+
+.hero img
+  z-index: -1

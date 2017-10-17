@@ -1,0 +1,42 @@
+.skills
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+
+.skill
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  width: 19%
+  @media #{$mobile}
+    width: 18%
+  height: 100%
+  @media #{$mobile}
+    padding-bottom: $spacing / 2
+
+.skill svg
+  width: 100%
+  height: 100%
+  max-width: $icon-max-size
+  max-height: $icon-max-size
+
+.skill .label
+  font-weight: 700
+  min-width: 50px
+  text-align: center
+  padding: $spacing / 2 0
+
+  @media #{$mobile}
+    display: none
+
+.skill path:first-of-type
+  color: $secondary-col
+  fill: currentColor
+
+.skill path:nth-of-type(2)
+  color: $primary-col
+  fill: currentColor
+
+.skill path.path-secondary
+  color: $secondary-col
+  fill: currentColor

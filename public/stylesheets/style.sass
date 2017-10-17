@@ -6,6 +6,19 @@ $secondary-col: white
 $spacing: 20px
 $content-width: 960px
 $mobile-tablet: '(max-width: 1100px)'
+$mobile: '(max-width: 500px)'
+$icon-max-size: 150px
+
+@import 'hero'
+@import 'skills'
+
+body
+  background: $primary-col
+  font-family: $font-sans
+  font-size: $font-size-regular
+  color: $secondary-col
+  text-align: center
+  margin: 0
 
 h1
   font-size: $font-size-regular * 4
@@ -18,35 +31,10 @@ h2
 h3
   font-size: $font-size-regular * 1.25
 
-body
-  background: $primary-col
-  font-family: $font-sans
-  font-size: $font-size-regular
-  color: $secondary-col
-  margin: 0
-
 a
   font-family: $font-serif
   color: $secondary-col
 
-// position on top of hero image
-.hero-content
-  position: absolute
-  top: 200px
-  @media #{$mobile-tablet}
-    top: 100px
-  width: 100%
-  opacity: 0
-  transition: opacity 2s
-
-.hero-content.loaded
-  opacity: 1
-
-.hero-content h1
-  margin-bottom: 0
-
-.hero img
-  z-index: -1
 
 .topnav
   padding: $spacing 0
@@ -81,19 +69,6 @@ a
 
 .img-responsive
   width: 100%
-
-.skills
-  display: flex
-  flex-wrap: wrap
-
-.skill
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-
-.skill > *
-  width: 100%
-  text-align: center
 
 .fa
   font-size: $font-size-regular * 3
