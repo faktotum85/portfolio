@@ -1,16 +1,7 @@
-$font-sans: 'Lato', sans-serif
-$font-serif: 'Vollkorn', serif
-$font-size-regular: 20px
-$primary-col: black
-$secondary-col: white
-$spacing: 20px
-$content-width: 960px
-$mobile-tablet: '(max-width: 1100px)'
-$mobile: '(max-width: 500px)'
-$icon-max-size: 150px
-
+@import 'variables'
 @import 'hero'
 @import 'skills'
+@import 'portfolio'
 
 body
   background: $primary-col
@@ -35,7 +26,6 @@ a
   font-family: $font-serif
   color: $secondary-col
 
-
 .topnav
   padding: $spacing 0
   display: flex
@@ -59,9 +49,12 @@ a
   font-weight: 700
 
 .wrapper
-  padding: $spacing
   max-width: $content-width
   margin: 0 auto 0 auto
+  padding: $spacing
+
+.wrapper.fw
+  max-width: 100%
 
 .section--alt
   background: $secondary-col
