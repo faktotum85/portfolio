@@ -6,21 +6,22 @@
     display: block
 
 .project
+  // reference point for the position of the label
+  position: relative
   @media #{$mobile}
     width: 100%
     height: auto
+    margin-bottom: $spacing
   @media #{$tablet-plus}
     flex: 1
     width: 100px
-    height: 500px
+    height: 400px
     transition: all 1s
     overflow: hidden
     display: flex
     justify-content: center
 
 .project:hover
-  @media #{$mobile}
-    height: 100%
   @media #{$tablet-plus}
     flex: 4
 
@@ -28,3 +29,20 @@
   height: 100%
   @media #{$mobile}
     width: 100%
+
+.project .label
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  line-height: 2
+  overflow: hidden
+  white-space: nowrap
+  background: $primary-col
+  color: $secondary-col
+  // fade in label on hover
+  opacity: 0
+  transition: all 1s
+
+.project:hover .label
+  opacity: $opacity
