@@ -1,22 +1,30 @@
 .portfolio
-  display: flex
   margin-left: -$spacing
   margin-right: -$spacing
+  display: flex
+  @media #{$mobile}
+    display: block
 
 .project
-  flex: 1
-  width: 100px
-  height: 500px
-  transition: all 1s
-  overflow: hidden
-  display: flex
-  justify-content: center
-
-.project:last-child
-  border-right: none
+  @media #{$mobile}
+    width: 100%
+    height: auto
+  @media #{$tablet-plus}
+    flex: 1
+    width: 100px
+    height: 500px
+    transition: all 1s
+    overflow: hidden
+    display: flex
+    justify-content: center
 
 .project:hover
-  flex: 4
+  @media #{$mobile}
+    height: 100%
+  @media #{$tablet-plus}
+    flex: 4
 
 .project img
   height: 100%
+  @media #{$mobile}
+    width: 100%
