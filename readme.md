@@ -1,11 +1,9 @@
 #TODO
+- add meta tags
 
-- add language meta tag
-- other meta tags
-
-- sketch out portfolio
+- add JS projects (codepen)
+- add links to full pages and code
+- update Menu to have brand link on the left (and maybe collapse)
 - sketch out contact
-- sketch out skills
 
-- make production ready (bundling & minification)
 - add domain name
