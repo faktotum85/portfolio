@@ -14,7 +14,21 @@ html(lang='en')
         a(href='#about') About
         a(href='#work') My Work
 
-    block hero
+    section#top.hero
+      picture.img-responsive
+        source(media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" srcset=`
+        images/igor-ovsyannykov-252351-min_vx0cyb_ar_1_2,c_fill,g_auto__c_scale,w_200.jpg 200w,
+        images/igor-ovsyannykov-252351-min_vx0cyb_ar_1_2,c_fill,g_auto__c_scale,w_459.jpg 459w,
+        images/igor-ovsyannykov-252351-min_vx0cyb_ar_1_2,c_fill,g_auto__c_scale,w_656.jpg 656w,
+        images/igor-ovsyannykov-252351-min_vx0cyb_ar_1_2,c_fill,g_auto__c_scale,w_767.jpg 767w`)
+        img.img-responsive(sizes="(max-width: 2800px) 100vw, 2800px" srcset=`
+        images/igor-ovsyannykov-252351-min_vx0cyb_ar_16_9,c_fill,g_auto__c_scale,w_768.jpg 768w,
+        images/igor-ovsyannykov-252351-min_vx0cyb_ar_16_9,c_fill,g_auto__c_scale,w_1020.jpg 1020w,
+        images/igor-ovsyannykov-252351-min_vx0cyb_ar_16_9,c_fill,g_auto__c_scale,w_1251.jpg 1251w,
+        images/igor-ovsyannykov-252351-min_vx0cyb_ar_16_9,c_fill,g_auto__c_scale,w_1400.jpg 1400w`
+        src="igor-ovsyannykov-252351-min_vx0cyb_ar_16_9,c_fill,g_auto__c_scale,w_1400.jpg"
+        alt="spare parts")    
+      block hero
                   
     block content
       
