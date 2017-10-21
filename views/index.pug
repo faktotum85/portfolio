@@ -66,19 +66,19 @@ block content
       h3 Javascript Applets
       .portfolio
         .project(style="background: rgb(153, 153, 153)") 
-          img(src="images/Javascript Calculator.png" alt="Javascript Calculator")
+          img(src="images/Javascript%20Calculator.png" alt="Javascript Calculator")
           .label Javascript Calculator
         .project
           img(src="images/Simon.png" alt="Game of Simon")
           .label Game of Simon
         .project(style="background: #FB6964")
-          img(src="images/Quote Generator.png" alt="Quote Generator")  
+          img(src="images/Quote%20Generator.png" alt="Quote Generator")  
           .label Quote Generator
         .project
-          img(src="images/Tic Tac Toe.png" alt="Tic Tac Toe")
+          img(src="images/Tic%20Tac%20Toe.png" alt="Tic Tac Toe")
           .label Tic Tac Toe
         .project(style="background: rgb(51, 51, 51)")
-          img(src="images/Pomodoro Clock.png" alt="Pomodoro Clock")
+          img(src="images/Pomodoro%20Clock.png" alt="Pomodoro Clock")
           .label Pomodoro Clock
 
       h3 Data-Visualization with D3.js
@@ -100,18 +100,22 @@ block content
           .label Scatter Chart
   
   section#contact
-    address
-      .vcard
-        .fn.n
-          span.given-name Simon
-          | &nbsp;
-          span.family-name Weller
-        .adr
-          .street-address Flemmingstr. 16         
-          span.postal-code 04177
-          | &nbsp;
-          span.locality Leipzig
-        a.email(href="mailto:mail@simonweller.de") mail@simonweller.de           
-        .tel +49 176 569 171 04
+    .wrapper
+      h2 Get in touch
+      address
+        .vcard
+          .fn.n
+            span.given-name Simon
+            | &nbsp;
+            span.family-name Weller
+          .adr
+            .street-address Flemmingstr. 16         
+            span.postal-code 04177
+            | &nbsp;
+            span.locality Leipzig
+          br
+          a.email(href="mailto:mail@simonweller.de") mail@simonweller.de
+          br           
+          a.tel(href="tel:+4917656917104") +49 176 569 171 04
 
       
