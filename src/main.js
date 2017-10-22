@@ -9,4 +9,10 @@
       topnav.classList.toggle('scrolled')
     }
   })
+
+  // toggle open class on menu button
+  const menuButton = document.querySelector('button.menu');
+  menuButton.addEventListener('click', () => {
+    topnav.classList.toggle('open')
+  })
 })()

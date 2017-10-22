@@ -1,0 +1,87 @@
+nav a
+  font-family: $font-serif
+  text-transform: uppercase
+  text-decoration: none
+
+.topnav
+  padding: $spacing 0
+  display: flex
+  justify-content: flex-end
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1
+  transition: all 1s
+  height: $font-size-regular
+
+// background if scrolled or mobile menu open - classes added with JS
+.topnav.scrolled, .topnav.open
+  background: rgba($primary-col, $opacity)
+
+.topnav>a
+  @media #{$mobile}
+    display: none
+  margin-right: $spacing
+  flex-basis: 120px
+  white-space: nowrap
+
+.topnav a:hover
+  font-weight: 700
+
+// mobile menu button
+.topnav button.menu
+  display: none
+  background: none
+  border: none
+  padding: 0 $spacing 0 0
+  // inherit color and font-size to pass along to nested links
+  color: inherit
+  font-size: inherit
+  @media #{$mobile}
+    display: block
+
+// get rid of default button outline
+.topnav button.menu:focus
+  outline: 0
+
+// resize to fit svg
+.topnav button.menu svg
+  width: 20px
+  height: 18px
+
+.topnav button.menu path
+  stroke: $secondary-col
+  transition: all 1s
+
+// transition from burger menu to close button when menu is open
+.topnav.open path:first-of-type
+  transform: rotate(40deg) translateX(3px)
+  transform-origin: left
+
+.topnav.open path:nth-of-type(2)
+  display: none
+
+.topnav.open path:last-of-type
+  transform: translate(-2px, -11px) rotate(-40deg)
+  transform-origin: right
+
+// mobile menu styles
+.mobile
+  position: fixed
+  right: 0
+  top: 60px
+  width: 100%
+
+.mobile a
+  display: block
+  text-align: right
+  // nice big tap targets
+  padding: 0 $spacing $spacing 0
+  // hide by default, overwritten when topnav is open
+  opacity: 0
+  background: rgba($primary-col, $opacity)
+  margin: 0
+
+.topnav.open .mobile a
+  transition: all 1s
+  opacity: 1

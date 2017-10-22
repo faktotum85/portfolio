@@ -10,10 +10,19 @@ html(lang='en')
     
     block nav
       nav.topnav
-        a(href='#') SW
         a(href='#about') About
-        a(href='#work') My Work
+        a(href='#work') Portfolio
         a(href='#contact') Contact
+        button.menu(href='#')
+          svg
+            path(d='M0,1.5 20,1.5' stroke-width='3')
+            path(d='M0,8 20,8' stroke-width='3')
+            path(d='M0,14.5 20,14.5' stroke-width='3')
+            | Menu
+          nav.mobile
+            a(href='#about') About
+            a(href='#work') Portfolio
+            a(href='#contact') Contact        
 
     section#top.hero
       picture.img-responsive
