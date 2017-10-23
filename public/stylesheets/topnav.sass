@@ -71,22 +71,22 @@ nav a
   right: 0
   top: 60px
   width: 100%
-
-.mobile a
-  display: block
-  text-align: right
   background: rgba($primary-col, $opacity)
-  margin: 0
-  // nice big tap targets
-  padding: 0 $spacing $spacing 0
   // hide by default, overwritten when topnav is open
   visibility: hidden
   opacity: 0
   // visibility transition delayed by 1s for fade-out, cancelled for fade-in below
   transition: visibility 0s 1s, opacity 1s
 
-.topnav.open .mobile a
+.topnav.open .mobile
   visibility: visible
   opacity: 1
   // cancel the transition delay of visibility for the fade in (where the open class is added)
   transition-delay: 0s
+
+.mobile a
+  display: block
+  text-align: right
+  margin: 0
+  // nice big tap targets
+  padding: 0 $spacing $spacing 0
