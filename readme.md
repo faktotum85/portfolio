@@ -10,6 +10,8 @@
 - validate html
 
 ## Nice to have
+- swipeable accordeon for portfolio section on mobile
+- transition middle line in menu icon
 - nicer fonts
 - stop fonts from blocking render
 - further optimize pngs
