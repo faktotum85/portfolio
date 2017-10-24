@@ -1,10 +1,10 @@
 (() => {
   // inject font link tag
   const fontLink = document.createElement('link');
-  fontLink.setAttribute('href', 'https://fonts.googleapis.com/css?family=Lato:400,700%7CVollkorn:400,700')
+  fontLink.setAttribute('href', 'https://fonts.googleapis.com/css?family=Merryweather:400,700%7COpen%20Sans:400,700')
   fontLink.setAttribute('rel', 'stylesheet')
   document.querySelector('head').appendChild(fontLink)
-  
+
   // fade in hero-content
   window.setTimeout(() => document.querySelector('.hero-content').classList.add('loaded'), 600)
 
