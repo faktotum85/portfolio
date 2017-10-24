@@ -13,7 +13,7 @@ const index = require('./routes/index');
 const app = express();
 
 // force https
-app.use(secure);
+// app.use(secure);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
