@@ -13,7 +13,7 @@ const index = require('./routes/index');
 const app = express();
 
 // force https
-// app.use(secure);
+app.use(secure);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,7 +32,7 @@ app.use(sassMiddleware({
   outputStyle: 'compressed',
   maxAge: '7d'
 }));
-app.use(compression());
+app.use(compression({threshold: 0}));
 app.use(express.static(path.join(__dirname, 'public'), {maxage: '7d'}));
 
 app.use('/', index);
