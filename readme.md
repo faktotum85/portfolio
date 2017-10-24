@@ -1,7 +1,7 @@
 # TODO
 ## Priority
-- full stack app examples
-- add links to full pages and code
+- finish adding links to full pages and code
+- add full stack app examples
 
 ## Final check
 - validate html
@@ -11,7 +11,6 @@
 - transition middle line in menu icon
 - nicer fonts
 - stop fonts from blocking render
-- further optimize pngs
 - tagline and body copy
 - check accessibility
 - move full pages to same domain

@@ -1,5 +1,7 @@
 extends layout
 
+include mixins/_project
+
 block hero
   .hero-content
     .wrapper
@@ -10,7 +12,7 @@ block content
 
   section#about
     .wrapper
-      h2 About me
+      h2 About Me
       p Hey, I'm Simon, a web developer with a deep background in data analysis and data visualization. 
       p I currently focus on applying modern Javascript solutions across the full stack. 
       h3.centered Core Skills
@@ -61,16 +63,23 @@ block content
 
   section#work.section--alt
     .wrapper.fw
-      h2 Examples of my work
+      h2 Selected examples of my work
 
-      h3 Javascript Applets
+      h3 Javascript applets
       .portfolio
-        .project(style="background: rgb(153, 153, 153)") 
-          img(src="images/Javascript%20Calculator.png" alt="Javascript Calculator")
-          .label Javascript Calculator
-        .project
-          img(src="images/Simon.png" alt="Game of Simon")
-          .label Game of Simon
+        +project({
+          name: "Javascript Calculator",
+          image: "Javascript%20Calculator.png", 
+          brief: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator", 
+          code: "https://codepen.io/faktotum85/pen/LjxYYX", 
+          background: "rgb(153, 153, 153)"
+        })
+        +project({
+          name: "Game of Simon",
+          image: "Simon.png", 
+          brief: "https://www.freecodecamp.org/challenges/Build%20a%20Simon%20Game", 
+          code: "https://codepen.io/faktotum85/pen/wqJmGw/", 
+        })
         .project(style="background: #FB6964")
           img(src="images/Quote%20Generator.png" alt="Quote Generator")  
           .label Quote Generator
@@ -81,7 +90,7 @@ block content
           img(src="images/Pomodoro%20Clock.png" alt="Pomodoro Clock")
           .label Pomodoro Clock
 
-      h3 Data-Visualization with D3.js
+      h3 Data-visualization with D3.js
       .portfolio
         .project 
           img(src="images/bar-chart.png" alt="D3.js Bar Chart")
@@ -101,7 +110,7 @@ block content
   
   section#contact
     .wrapper
-      h2 Get in touch
+      h2 Need a hand?
       address.vcard
         .social
           a(href="https://www.linkedin.com/in/simon-weller-38891533/" target="_blank")

@@ -1,0 +1,13 @@
+mixin project(project)
+  .project(style=`background: ${project.background || 'white'}`) 
+    img(src=`images/${project.image}` alt=project.name)
+    .label 
+      span.name #{project.name}
+      br
+      span.brief 
+        a(href=`${project.brief}` target="_blank") Brief
+        |  on freeCodeCamp
+      br
+      span.code 
+        a(href=`${project.code}` target="_blank") Full code
+        |  on CodePen
