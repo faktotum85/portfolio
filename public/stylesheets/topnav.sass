@@ -13,9 +13,6 @@ nav a
   z-index: 1
   transition: all 1s
   height: $font-size-regular
-
-// background if scrolled or mobile menu open - classes added with JS
-.topnav.scrolled, .topnav.open
   background: rgba($primary-col, $opacity)
 
 .topnav>a
@@ -70,19 +67,13 @@ nav a
   position: fixed
   right: 0
   top: 60px
-  width: 100%
+  width: 50%
   background: rgba($primary-col, $opacity)
-  // hide by default, overwritten when topnav is open
-  visibility: hidden
-  opacity: 0
-  // visibility transition delayed by 1s for fade-out, cancelled for fade-in below
-  transition: visibility 0s 1s, opacity 1s
+  transform: translateX(100%)
+  transition: all 1s
 
 .topnav.open .mobile
-  visibility: visible
-  opacity: 1
-  // cancel the transition delay of visibility for the fade in (where the open class is added)
-  transition-delay: 0s
+  transform: translateX(0)
 
 .mobile a
   display: block

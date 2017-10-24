@@ -2,7 +2,6 @@
 ## Priority
 - full stack app examples
 - add links to full pages and code
-- new header image
 
 ## Final check
 - validate html
