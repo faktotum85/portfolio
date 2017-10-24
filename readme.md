@@ -1,10 +1,8 @@
 #TODO
 ## Priority
-- build out contact & impressum
 - full stack app examples
-- add domain name
 - add links to full pages and code
-- new header images
+- new header image
 
 ## Final check
 - validate html

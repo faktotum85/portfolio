@@ -6,10 +6,14 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const sassMiddleware = require('node-sass-middleware');
 const compression = require('compression');
+const secure = require('express-force-https');
 
 const index = require('./routes/index');
 
 const app = express();
+
+// force https
+app.use(secure);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
