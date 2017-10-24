@@ -31,3 +31,7 @@ npm-debug.log
 
 # Webpack bundle
 public/javascripts/bundle.js
+
+# Built artefacts
+public/stylesheets/*.css
+public/stylesheets/*.css.map
