@@ -1,8 +1,5 @@
 # TODO
 
-## Final check
-- validate html
-
 ## Nice to have
 - swipeable accordeon for portfolio section on mobile
 - transition middle line in menu icon
@@ -12,3 +9,6 @@
 - check accessibility
 - move full pages to same domain
 - add meta tags
+
+## Final check
+- validate html
