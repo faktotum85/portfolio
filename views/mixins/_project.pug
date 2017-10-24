@@ -8,6 +8,10 @@ mixin project(project)
         a(href=`${project.brief}` target="_blank") Brief
         |  on freeCodeCamp
       br
-      span.code 
-        a(href=`${project.code}` target="_blank") Full code
-        |  on CodePen
+      if project.codepen
+        span.code 
+          a(href=`${project.codepen}` target="_blank") Full code
+          |  on CodePen
+      else 
+        span.url
+          a(href=`${project.url}` target="_blank") Live demo

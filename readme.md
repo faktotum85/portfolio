@@ -1,7 +1,4 @@
 # TODO
-## Priority
-- finish adding links to full pages and code
-- add full stack app examples
 
 ## Final check
 - validate html

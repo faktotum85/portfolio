@@ -63,50 +63,109 @@ block content
 
   section#work.section--alt
     .wrapper.fw
-      h2 Selected examples of my work
+      h2 Things I have built
+      h3 Web Applications
+      .portfolio
+        +project({
+          name: "Pinterest Clone with masonry.js",
+          image: "pinterest-clone.png", 
+          brief: "https://www.freecodecamp.org/challenges/Build%20a%20Pinterest%20Clone", 
+          url: "https://infinite-headland-31227.herokuapp.com/"
+        })
+        +project({
+          name: "Stockmarket watch with websockets",
+          image: "stockmarket-watch.png", 
+          brief: "https://www.freecodecamp.org/challenges/Chart%20the%20Stock%20Market", 
+          url: "https://fcc-stockwatch.herokuapp.com/"
+        })
+        +project({
+          name: "Nightlife coordination with Yelp API",
+          image: "nightlife-coordination.png", 
+          brief: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app", 
+          url: "https://fcc-nl-app.herokuapp.com/search?location=Berlin"
+        })
+        +project({
+        name: "Game of Life in React",
+        image: "game-of-life.png", 
+        brief: "https://www.freecodecamp.org/challenges/Build%20the%20Game%20of%20Life", 
+        url: "https://fcc-gol.herokuapp.com/"
+        })
+        +project({
+          name: "Book Trading Club with Google Books API",
+          image: "book-trading-club.png", 
+          brief: "https://www.freecodecamp.org/challenges/Manage%20a%20Book%20Trading%20Club", 
+          url: "https://my-fcc-bookclub.herokuapp.com/"
+        })
 
-      h3 Javascript applets
+      h3 Data Visualizations (with D3.js)
+      .portfolio
+        +project({
+          name: "Bar Chart",
+          image: "bar-chart.png", 
+          brief: "https://www.freecodecamp.org/challenges/Visualize%20Data%20with%20a%20Bar%20Chart", 
+          url: "https://d3-chart-demos.herokuapp.com/bar.html", 
+        })
+        +project({
+          name: "Heatmap Chart",
+          image: "heatmap-chart.png", 
+          brief: "https://www.freecodecamp.org/challenges/Visualize%20Data%20with%20a%20Heat%20Map", 
+          url: "https://d3-chart-demos.herokuapp.com/heatmap.html", 
+        })
+        +project({
+          name: "Force-directed Visualization",
+          image: "force-directed-chart.png", 
+          brief: "https://www.freecodecamp.org/challenges/Show%20National%20Contiguity%20with%20a%20Force%20Directed%20Graph", 
+          url: "https://d3-chart-demos.herokuapp.com/force-directed.html", 
+        })
+        +project({
+          name: "Map Visualization of Meteor Strikes",
+          image: "map-chart.png", 
+          brief: "https://www.freecodecamp.org/challenges/Map%20Data%20Across%20the%20Globe", 
+          url: "https://d3-chart-demos.herokuapp.com/map.html", 
+        })
+        +project({
+          name: "Scatter Chart",
+          image: "scatter-chart.png", 
+          brief: "https://www.freecodecamp.org/challenges/Visualize%20Data%20with%20a%20Scatterplot%20Graph", 
+          url: "https://d3-chart-demos.herokuapp.com/scatter.html", 
+        })
+
+      h3 Javascript Applets
       .portfolio
         +project({
           name: "Javascript Calculator",
           image: "Javascript%20Calculator.png", 
           brief: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator", 
-          code: "https://codepen.io/faktotum85/pen/LjxYYX", 
+          codepen: "https://codepen.io/faktotum85/pen/LjxYYX", 
           background: "rgb(153, 153, 153)"
         })
         +project({
           name: "Game of Simon",
           image: "Simon.png", 
           brief: "https://www.freecodecamp.org/challenges/Build%20a%20Simon%20Game", 
-          code: "https://codepen.io/faktotum85/pen/wqJmGw/", 
+          codepen: "https://codepen.io/faktotum85/pen/wqJmGw"
         })
-        .project(style="background: #FB6964")
-          img(src="images/Quote%20Generator.png" alt="Quote Generator")  
-          .label Quote Generator
-        .project
-          img(src="images/Tic%20Tac%20Toe.png" alt="Tic Tac Toe")
-          .label Tic Tac Toe
-        .project(style="background: rgb(51, 51, 51)")
-          img(src="images/Pomodoro%20Clock.png" alt="Pomodoro Clock")
-          .label Pomodoro Clock
+        +project({
+          name: "Quote Generator",
+          image: "Quote%20Generator.png", 
+          brief: "https://www.freecodecamp.org/challenges/Build%20a%20Random%20Quote%20Machine", 
+          codepen: "https://codepen.io/faktotum85/pen/oexRVg", 
+          background: "#FB6964"
+        })
+        +project({
+          name: "Tic Tac Toe with AI opponent",
+          image: "Tic%20Tac%20Toe.png", 
+          brief: "https://www.freecodecamp.org/challenges/Build%20a%20Tic%20Tac%20Toe%20Game", 
+          codepen: "https://codepen.io/faktotum85/pen/zdNXqb" 
+        })
+        +project({
+          name: "Pomodoro Clock",
+          image: "Pomodoro%20Clock.png", 
+          brief: "https://www.freecodecamp.org/challenges/Build%20a%20Pomodoro%20Clock", 
+          codepen: "https://codepen.io/faktotum85/pen/qXRmgY", 
+          background: "rgb(51, 51, 51)"
+        })        
 
-      h3 Data-visualization with D3.js
-      .portfolio
-        .project 
-          img(src="images/bar-chart.png" alt="D3.js Bar Chart")
-          .label Bar Chart
-        .project 
-          img(src="images/heatmap-chart.png" alt="D3.js Heatmap Chart")
-          .label Heatmap Chart
-        .project
-          img(src="images/force-directed-chart.png" alt="D3.js Force-directed Visualization")  
-          .label Force-directed Visualization
-        .project
-          img(src="images/map-chart.png" alt="D3.js Map Visualization")
-          .label Map Visualization
-        .project
-          img(src="images/scatter-chart.png" alt="D3.js Scatter Chart")
-          .label Scatter Chart
   
   section#contact
     .wrapper
@@ -144,5 +203,3 @@ block content
           br       
           a.tel(href="tel:+4917656917104") +49 176 569 171 04
           br
-
-      
