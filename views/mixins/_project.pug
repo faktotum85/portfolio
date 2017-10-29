@@ -15,3 +15,8 @@ mixin project(project)
       else 
         span.url
           a(href=`${project.url}` target="_blank") Live demo
+      if project.github
+        br
+        span.code 
+          a(href=`${project.github}` target="_blank") Full code
+          |  on Github
