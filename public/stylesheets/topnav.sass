@@ -75,6 +75,11 @@ nav a
 .topnav.open .mobile
   transform: translateX(0)
 
+// hide mobile menu when page gets sized up
+.topnav.open .mobile
+  @media #{$tablet-plus}
+    transform: translateX(100%)
+
 .mobile a
   display: block
   text-align: right
