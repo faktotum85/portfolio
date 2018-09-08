@@ -9,19 +9,14 @@ html(lang='en')
     
     block nav
       nav.topnav
-        a(href='#about') About
-        a(href='#work') Portfolio
-        a(href='#contact') Contact
+        include includes/nav-items.pug
         button.menu
           svg
             path(d='M0,1.5 20,1.5' stroke-width='3')
             path(d='M0,8 20,8' stroke-width='3')
             path(d='M0,14.5 20,14.5' stroke-width='3')
         nav.mobile
-          a(href='#about') About
-          a(href='#work') Portfolio
-          a(href='#contact') Contact        
-
+          include includes/nav-items.pug
     section#top.hero.section
       picture.img-responsive
         img.img-responsive(sizes="(max-width: 2800px) 100vw, 2800px" srcset=`
